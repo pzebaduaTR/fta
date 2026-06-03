@@ -413,6 +413,7 @@ h1, h2, h3, h4 {
 .modal { background: var(--paper); max-width: 640px; width: 100%; max-height: 86vh; overflow-y: auto; padding: clamp(2rem,5vw,3.2rem); position: relative; border-top: 4px solid var(--plum); }
 .modal h3 { font-family: var(--serif); font-size: 2.1rem; font-weight: 300; color: var(--plum); margin-bottom: 1.4rem; padding-right: 2.5rem; font-style: italic; }
 .modal p { font-size: 0.96rem; margin-bottom: 1rem; }
+.modal h4 { font-family: var(--sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--plum); margin: 2rem 0 0.75rem; }
 .modal a { color: var(--plum); font-weight: 600; }
 .modal .modal-close { position: absolute; top: 1.3rem; right: 1.3rem; width: 40px; height: 40px; border: 1px solid var(--line); background: none; cursor: pointer; display: grid; place-items: center; color: var(--ink); transition: background 0.3s var(--ease), color 0.3s var(--ease); }
 .modal .modal-close:hover { background: var(--plum); color: #fff; border-color: var(--plum); }
