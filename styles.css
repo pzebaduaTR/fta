@@ -150,8 +150,8 @@ h1, h2, h3, h4 {
 }
 .rail a .dot { width: 18px; height: 1px; background: var(--muted); transition: width 0.4s var(--ease), background 0.4s var(--ease); flex-shrink: 0; }
 .rail a .ix { font-family: var(--serif); font-size: 0.78rem; font-weight: 500; }
-.rail a .lbl { opacity: 0; transform: translateX(-4px); transition: opacity 0.4s var(--ease), transform 0.4s var(--ease); white-space: nowrap; }
-.rail a:hover .lbl { opacity: 1; transform: none; }
+.rail a .lbl { opacity: 0.7; transform: none; transition: opacity 0.4s var(--ease); white-space: nowrap; }
+.rail a:hover .lbl { opacity: 1; }
 .rail a.active { color: var(--plum); }
 .rail a.active .dot { width: 34px; background: var(--plum); }
 .rail a.active .lbl { opacity: 1; transform: none; color: var(--plum); }
@@ -192,7 +192,7 @@ h1, h2, h3, h4 {
    ========================================================= */
 .hero {
   min-height: 100svh; display: flex; flex-direction: column; justify-content: center;
-  background: radial-gradient(140% 80% at 100% 0%, rgba(81,12,118,0.55), transparent 55%), var(--ink);
+  background: radial-gradient(140% 80% at 100% 60%, rgba(81,12,118,0.55), transparent 55%), var(--ink);
   color: var(--cream); overflow: hidden; padding-block: 8rem 4rem;
 }
 .hero::after {
