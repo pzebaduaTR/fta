@@ -395,6 +395,7 @@ h1, h2, h3, h4 {
 .colophon { background: var(--ink); color: rgba(255,255,255,0.72); }
 .colophon .inner { padding-block: clamp(4rem,8vw,6rem) 2.5rem; }
 .colo-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2.5rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.14); }
+.footer-logo { height: 4rem; width: auto; display: block; filter: brightness(0) invert(1); }
 .colo-name { font-family: var(--serif); font-size: clamp(1.5rem,3vw,2.2rem); font-weight: 300; color: #fff; margin: 1rem 0 0.6rem; max-width: 20ch; }
 .colo-com { font-size: 0.85rem; color: var(--taupe); letter-spacing: 0.03em; max-width: 38ch; }
 .colophon h5 { font-family: var(--sans); font-size: 0.64rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--taupe); margin-bottom: 1.2rem; }
