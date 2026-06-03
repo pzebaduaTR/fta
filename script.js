@@ -93,6 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     const cuerpo = `Nombre: ${nombre}\nCorreo: ${correo}\n\n${mensaje}`;
     window.location.href =
-      `mailto:admonftagency@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+      `mailto:info@fta.mx?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
   });
 });
