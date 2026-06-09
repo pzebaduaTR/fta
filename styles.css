@@ -244,6 +244,9 @@ h1, h2, h3, h4 {
 .btn-light { color: var(--cream); border-color: rgba(255,255,255,0.5); }
 .btn-light::before { background: var(--cream); }
 .btn-light:hover { color: var(--ink); border-color: var(--cream); }
+.btn-plum { color: var(--plum); border-color: var(--plum); }
+.btn-plum::before { background: var(--plum); }
+.btn-plum:hover { color: #fff; border-color: var(--plum); }
 
 /* =========================================================
    Marquesina editorial

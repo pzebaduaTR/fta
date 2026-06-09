@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" /></noscript>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="no-js">
@@ -134,14 +135,14 @@
           <h3>Hotel <em>Cuadra</em></h3>
           <p class="role">by Casona El Calvario · administrado por FTA</p>
           <p>Hotel administrado por FTA. Para habitaciones, servicios, disponibilidad y reservaciones, consulte la página oficial del hotel.</p>
-          <a href="https://cuadra.casonelcalvario.com/" target="_blank" rel="noopener" class="btn btn-light">Visitar sitio del hotel <i data-lucide="arrow-up-right"></i></a>
+          <a href="https://cuadra.casonelcalvario.com/" target="_blank" rel="noopener" class="btn btn-plum">Visitar sitio del hotel <i data-lucide="arrow-up-right"></i></a>
         </article>
         <article class="plate-card" data-aos="fade-up" data-aos-delay="160">
           <div class="pn"></div>
           <h3>Bosque <em>Bistro</em></h3>
           <p class="role">Marca gastronómica operada por FTA</p>
           <p>Marca gastronómica operada por FTA dentro de Hotel Casona El Calvario. Para horarios, menú vigente o reservaciones, consulte el sitio del bistro.</p>
-          <a href="https://bistro.casonaelcalvario.com/" target="_blank" rel="noopener" class="btn btn-light">Visitar sitio del bistro <i data-lucide="arrow-up-right"></i></a>
+          <a href="https://bistro.casonaelcalvario.com/" target="_blank" rel="noopener" class="btn btn-plum">Visitar sitio del bistro <i data-lucide="arrow-up-right"></i></a>
         </article>
       </div>
     </section>
@@ -389,8 +390,8 @@
     </div>
   </div>
 
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
