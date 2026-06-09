@@ -328,16 +328,17 @@ h1, h2, h3, h4 {
 .mv { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .mv > div { padding: clamp(2rem,4vw,3.4rem); }
 .mv > div:first-child { border-right: 1px solid var(--line); }
-.mv h3 { font-family: var(--serif); font-size: 2rem; font-weight: 300; color: var(--plum); margin-bottom: 1.2rem; font-style: italic; }
+.mv h3 { font-family: var(--serif); font-size: 2rem; font-weight: 700; color: var(--plum); margin-bottom: 1.2rem; font-style: italic; }
 .mv p { margin-bottom: 1rem; max-width: var(--measure); }
 .mv p:last-child { margin-bottom: 0; }
-.values { margin-top: clamp(3rem,6vw,4.5rem); }
-.values .v { display: grid; grid-template-columns: 3.5rem 14rem 1fr; gap: 1.5rem; align-items: baseline; padding: 1.8rem 0; border-bottom: 1px solid var(--line); transition: background 0.4s var(--ease); }
-.values .v:first-child { border-top: 1px solid var(--line); }
-.values .v:hover { background: var(--sand); }
-.values .v .vn { font-family: var(--serif); font-size: 1rem; color: var(--plum); }
-.values .v h4 { font-family: var(--serif); font-size: clamp(1.4rem,2.4vw,1.9rem); font-weight: 300; }
-.values .v p { font-size: 0.94rem; color: var(--muted); max-width: 52ch; }
+.values-heading { font-family: var(--serif); font-size: 2rem; font-weight: 700; color: var(--plum); font-style: italic; margin-top: clamp(3rem,6vw,4.5rem); margin-bottom: 1.2rem; padding-left: clamp(2rem,4vw,3.4rem); }
+.values { display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(2rem,4vw,4rem); }
+.values-col .v { display: grid; grid-template-columns: 3.5rem 1fr; grid-template-rows: auto auto; column-gap: 1.5rem; row-gap: 0.4rem; align-items: baseline; padding: 1.8rem 0; border-bottom: 1px solid var(--line); transition: background 0.4s var(--ease); }
+.values-col .v:first-child { border-top: 1px solid var(--line); }
+.values-col .v:hover { background: var(--sand); }
+.values .v .vn { font-family: var(--serif); font-size: 1rem; color: var(--plum); grid-column: 1; grid-row: 1; }
+.values .v h4 { font-family: var(--serif); font-size: clamp(1.4rem,2.4vw,1.9rem); font-weight: 300; grid-column: 2; grid-row: 1; }
+.values .v p { font-size: 0.94rem; color: var(--muted); max-width: 52ch; grid-column: 2; grid-row: 2; }
 
 /* =========================================================
    05 · El lugar
@@ -432,8 +433,9 @@ h1, h2, h3, h4 {
   .overlay-aside { display: none; }
   .ledger li { grid-template-columns: 2.2rem 1fr; }
   .ledger .d { grid-column: 2 / -1; }
-  .values .v { grid-template-columns: 2.5rem 1fr; }
-  .values .v p { grid-column: 1 / -1; max-width: none; }
+  .values { grid-template-columns: 1fr; }
+  .values-col .v { grid-template-columns: 2.5rem 1fr; }
+  .values-col .v p { max-width: none; }
   .colo-top { gap: 1.8rem; }
   .hero-edition { display: none; }
 }
